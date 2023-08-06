@@ -8,9 +8,45 @@
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
+
+
+  // const animationData = 'assets/hphk.json'; // Path to your Lottie JSON file
+      
+  //     // Load the Lottie animation for the preloader
+  //     const animation = lottie.loadAnimation({
+  //       container: document.querySelector('#lottie-container'),
+  //       renderer: 'svg',
+  //       loop: true,
+  //       autoplay: true,
+  //       path: animationData
+  //     });
+
+  //     // Listen for the whole page to be fully loaded
+  //     window.addEventListener('load', () => {
+  //       // Remove the preloader and reveal the main content
+  //       const preloader = document.querySelector('#lottie-container');
+  //       const mainContent = document.querySelector('#main-content');
+
+  //       if (preloader) {
+  //         preloader.remove();
+  //       }
+
+  //       if (mainContent) {
+  //         mainContent.style.display = 'block';
+  //       }
+  //     });
+
+
+
+
+
+
   /**
    * Scroll top button
    */
+
+ 
+
   let scrollTop = document.querySelector('.scroll-top');
 
   function toggleScrollTop() {
@@ -32,12 +68,37 @@ document.addEventListener('DOMContentLoaded', () => {
   /**
    * Preloader
    */
-  const preloader = document.querySelector('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove();
-    });
-  }
+  // const preloader = document.querySelector('#preloader');
+  // if (preloader) {
+  //   window.addEventListener('load', () => {
+  //     preloader.remove();
+  //   });
+  // }
+// script.js
+
+// Select the preloader container element
+// const preloader = document.querySelector('#lottie-container');
+
+// // Load and display the Lottie animation
+// const animationData = 'assets/hphk.json'; // Path to your Lottie JSON file
+
+// // Load the animation
+// const animation = lottie.loadAnimation({
+//   container: preloader, // Use the preloader container
+//   renderer: 'svg', // Use 'svg' renderer for browser compatibility
+//   loop: true,
+//   autoplay: true,
+//   path: animationData // Path to your Lottie JSON file
+// });
+
+// // Listen for the Lottie animation load event
+// animation.addEventListener('DOMloaded', () => {
+//   // Once the animation is loaded, remove the preloader
+//   preloader.remove();
+// });
+
+
+  
 
   /**
    * Apply .scrolled class to the body as the page is scrolled down
