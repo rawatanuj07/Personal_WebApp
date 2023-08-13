@@ -614,7 +614,7 @@ section {
   opacity: 1;
 }
 
-#lottie-container {
+/* #lottie-container {
   width: 100%;
   max-width: 300px;
   height: auto;
@@ -626,7 +626,7 @@ section {
 }
 #lottie-seeker-input {
   display: none;
-}
+} */
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -1477,8 +1477,134 @@ p{
   font-size: 14px;
 }
 
+
+@media (max-width: 480px) {
+  /* Add styles here for mobile devices */
+
+
+}
+@media (min-width: 481px) and (max-width: 999px) {
+  /* Add styles here for tablet devices */
+
+
+
+}
+@media (min-width: 1025px) {
+  /* Add styles here for laptop/desktop devices */
+  .slider-item-show2:not(.slider-item-snapstart) .slider-container>*{
+    background-color: gray;
+  }
+  .ctwo li {
+    position: relative;
+  }
+  
+  .ctwo li h2{
+    position: absolute;
+    top: -67%;
+    right: 0;
+  }
+
+  .corsel h1{
+margin-left: 38vw;
+  }
+
+  .corsel h2{
+    margin-left: 25vw;
+      }
+
+      .corsel h3{
+        margin-left: 40vw;
+          }
+}
+
+.swiffy-slider{
+  height: 100vh;
+}
+
+
+.slider-item-show2:not(.slider-item-snapstart) .slider-container>*{
+  background-color: gray;
+    height: 70%;
+    margin-bottom: 100px;
+}
+@media (max-width: 62rem){
+  /* .swiffy-slider {
+height: ;
+    z-index: -1;
+} */
+.slider-container{
+  height: 70%;
+}
+}
+
+.cone li {
+  position: relative;
+}
+
+.cone li h2 {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  /* bottom: 30px; */
+  /* adjust the values of top and right as needed */
+}
+
+
+.slider-container{
+  background-color: gray;
+}
+
+
+@media (max-width: 600px) {
+  #my-lottie {
+      /* styles for devices with screen width less than or equal to 600px */
+      width: 300px;
+      height: 200px;
+  }
+  .ctwo li {
+    position: relative;
+  }
+  .ctwo li h2{
+    position: absolute;
+    margin-top: 20%;
+    right: 0;
+  }
+  .ctwo lottie-player{
+    margin-top: 80vh;
+    /* transform: rotate(90deg); */
+    height: auto;
+    width: auto;
+  }
+
+  .cfour li {
+    position: relative;
+  }
+  .cfour li h2{
+    position: absolute;
+    margin-top: -35%;
+    right: 0;
+  }
+  .cfour lottie-player{
+    margin-top: 600px;
+    /* transform: rotate(90deg); */
+    height: 400px;
+    width: auto;
+  }
+
+
+}
+
+
+
+
+
 /* Features Section - Home Page
 ------------------------------*/
+
+#features{
+  margin-top: 100px;
+}
+
 .features .features-item {
   color: rgba(var(--color-default-rgb), 0.8);
 }
@@ -1577,6 +1703,9 @@ p{
   width: 100%;
   z-index: 2;
 }
+
+
+
 
 /* Portfolio Section - Home Page
 ------------------------------*/
