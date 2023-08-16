@@ -2,15 +2,20 @@
 <html lang="en">
 
 <head>
+  <!-- <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("preloader").style.display = "none";
+    });
+  </script> -->
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Home - Append Bootstrap Temlate</title>
+  <title>Decode-Parvathy</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/mountain.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -59,19 +64,37 @@
       path: animationData // Path to your Lottie JSON file
     });
   </script> -->
-
-  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
-  defer></script>
-  <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
-    crossorigin="anonymous">
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+    defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+ 
 
 
-<script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider-extensions.min.js crossorigin="anonymous"
-defer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider-extensions.min.js crossorigin="
+    anonymous" defer"></script>
+    <!-- <style>
+      #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
+    </style> -->
 
 
+  <script>
+    var video = document.getElementById("myVideo");
+    video.playbackRate = -0.5; // Adjust the playback speed here (0.5 is half speed)
+  </script>
 
 
 
@@ -79,6 +102,16 @@ defer"></script>
 </head>
 
 <body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
+  <!-- <div id="preloader">
+    <lottie-player
+      src="assets/jsonss/animationRocket.json"
+      background="transparent"
+      speed="1"
+      style="width: 300px; height: 300px;"
+      loop
+      autoplay
+    ></lottie-player>
+  </div> -->
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
@@ -88,7 +121,7 @@ defer"></script>
       <!-- Uncomment the line below if you also wish to use an image logo -->
       <!-- <img src="assets/img/logo.png" alt=""> -->
       <!-- <h1>Append</h1> -->
-      <span>.</span>
+      <span></span>
       </a>
 
       <!-- Nav Menu -->
@@ -97,9 +130,11 @@ defer"></script>
           <li><a href="index.html#hero" class="active">Home</a></li>
           <li><a href="index.html#about">About</a></li>
           <li><a href="index.html#services">Services</a></li>
-          <li><a href="index.html#portfolio">Portfolio</a></li>
+          <li><a href="index.html#features">Process</a></li>
           <!-- <li><a href="index.html#team">Team</a></li> -->
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+
+
           <!-- <li class="dropdown has-dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down"></i></a>
             <ul class="dd-box-shadow">
               <li><a href="#">Dropdown 1</a></li>
@@ -120,13 +155,13 @@ defer"></script>
           <li><a href="index.html#contact">Contact</a></li>
         </ul>
 
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        <i class="mobile-nav-toggle glass d-xl-none bi bi-list"></i>
       </nav><!-- End Nav Menu -->
 
       <!-- <a class="btn-getstarted" href="index.html#about">Get Started</a> -->
 
     </div>
-    
+
   </header><!-- End Header -->
 
   <main id="main">
@@ -136,14 +171,16 @@ defer"></script>
 
       <video class="d-none d-md-block" src="assets/img/downloabg.mp4" alt="" data-aos="fade-in" autoplay loop
         muted></video>
+      <video id="myVideo" class=" d-md-none d-sm-block" src="assets/img/Mobile_hero_bg.mp4" alt="" data-aos="fade-in"
+        autoplay loop muted></video>
       <!-- <img src="assets/img/hero.gif" alt="" data-aos="fade-in"> -->
 
       <div class="container">
         <div class="row">
           <div id="hero" col-lg-10">
-            <h2 data-aos="fade-up" data-aos-delay="500">Anuj Rawat</h2>
+            <h2 data-aos="fade-up" data-aos-delay="500" class="glass">Anuj Rawat</h2>
             <!-- <p data-aos="fade-up" data-aos-delay="200">We are team of talented designers making websites with Bootstrap</p> -->
-            <p>I'm a <span class="typed" data-typed-items="Freelancer, QA Engineer, Tester, Developer"></span>
+            <p>I'm a <span class="typed" data-typed-items="Freelancer, QA Engineer, Tester, Programmer"></span>
               <span class="typed-cursor" aria-hidden="true"></span>
             </p>
           </div>
@@ -180,6 +217,7 @@ defer"></script>
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row align-items-xl-center gy-5 ">
           <div class="col-xl-5 content">
+
             <h3 id="aboutx">About Me</h3>
             <h2>QA Engineer | Freelancer | Software Testing Maestro</h2>
             <!-- Add the Lottie player here for mobile view -->
@@ -187,32 +225,108 @@ defer"></script>
               <lottie-player src="assets/hphk.json" background="grey" speed="1.5" style="border-radius: 8px" loop
                 autoplay></lottie-player>
             </div>
-            <p class="first-para  zara">As an accomplished QA freelancer, I specialize in meticulously testing and
+            <h4 class="first-para  zara">As an accomplished QA and Automation Engineer, I specialize in meticulously
+              testing and
               perfecting software
               solutions to ensure unparalleled user experiences.
-            </p>
-            <p>
+            </h4>
+            <h4>
               I have a profound grasp of both manual and automated testing methodologies, I craft comprehensive test
               plans and execute intricate test cases. Swift defect identification and comprehensive reporting are
               integral to my process, leading to the seamless enhancement of software quality.
-            </p>
+            </h4>
             <div id="extra-content" style="display: none;">
 
-              <p class="zara"> I am a collaborative team player, I orchestrate synergy among stakeholders for
+              <h4 class="zara"> I am a collaborative team player, I orchestrate synergy among stakeholders for
                 streamlined development
                 lifecycles. Being an Agile troubleshooter and driven to ensure optimal user satisfaction, my
                 dedication to delivering software of unmatched precision and sophistication drives my pursuit of
                 optimal user satisfaction.
 
-              </p><br></br>
-              <p class="zara">
+              </h4><br></br>
+              <h4 class="zara">
                 Elevate your software's excellence with my unwavering testing expertise.
-              </p>
+              </h4>
 
 
 
             </div>
             <a href="#" class="read-more "><span>Read More</span><i class="bi bi-arrow-down"></i></a>
+
+
+
+            <!-- ======= Skills  ======= -->
+
+
+            <div id="sk" class="skills container" style="width: 100vw">
+
+              <div class="section-title" style=" width: 100%; padding-bottom: 0px; font-size: 300px;">
+                <h2 style=" color: #e80368; margin-left: 0px;">Skills</h2>
+              </div>
+
+              <div class="row skills-content">
+
+                <div class="col-lg-6">
+
+                  <div class="progress">
+                    <span class="skill">Manual Testing | Automation Testing<i class="val">98%</i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                  <div class="progress">
+                    <span class="skill">Automation: Selenium, Jmeter, Appium.<i class="val">95%</i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                  <div class="progress">
+                    <span class="skill">GUI, Functional, Integration, Regression.<i class="val">90%</i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                  <div class="progress">
+                    <span class="skill">API Automation (RESTful APIs)<i class="val">80%</i></span>
+                    <div class="progress-bar-wrap">
+                      <div id="pb" class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                  <div class="progress">
+                    <span class="skill">Html, CSS, JS, Bootstrap, React, Dart, Flutter<i class="val">85%</i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="85" (!important) aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                  <div class="progress">
+                    <span class="skill">Backend: Java and Springboot<i class="val">80%</i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div><!-- End Skills -->
+
+
 
             <div class="col-xl-7">
               <div class="row gy-4 icon-boxes">
@@ -234,7 +348,7 @@ defer"></script>
 
 
                     <!-- Stats Section - Home Page -->
-                    <section id="stats" class="stats">
+                    <section id="stats" class="stats d-none d-md-block d-sm-none">
 
                       <!-- <img src="" alt="" data-aos="fade-in"> -->
                       <lottie-player class="xdx" src="assets/wavelinesssss.json" background="transparent" speed="1"
@@ -254,6 +368,10 @@ defer"></script>
                             </div>
                           </div><!-- End Stats Item -->
 
+
+
+
+
                           <div class="col-lg-3 col-md-6">
                             <div class="stats-item text-center w-100 h-100">
                               <span data-purecounter-start="0" data-purecounter-end="80" data-purecounter-duration="1"
@@ -270,13 +388,7 @@ defer"></script>
                             </div>
                           </div><!-- End Stats Item -->
 
-                          <!-- <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Workers</p>
-            </div>
-          </div>End Stats Item -->
+
 
                         </div>
 
@@ -312,6 +424,52 @@ defer"></script>
                 <!--OVERRRRR-->
 
 
+                <!-- ======= Counts ======= -->
+                <div class="counts container  d-xl-none d-sm-block">
+
+                  <div class="row">
+
+                    <div class="col-lg-3 col-md-6">
+                      <div class="count-box">
+                        <i class="bi bi-emoji-smile"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1"
+                          class="purecounter"></span>
+                        <p>Happy Clients</p>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+                      <div class="count-box">
+                        <i class="bi bi-journal-richtext"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="80" data-purecounter-duration="1"
+                          class="purecounter"></span>
+                        <p>Projects</p>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+                      <div class="count-box">
+                        <i class="bi bi-headset"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1"
+                          class="purecounter"></span>
+                        <p>Hours Of Support</p>
+                      </div>
+                    </div>
+
+                    <!-- <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+                      <div class="count-box">
+                        <i class="bi bi-award"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1"
+                          class="purecounter"></span>
+                        <p>Awards</p>
+                      </div>
+                    </div> -->
+
+                  </div>
+
+                </div><!-- End Counts -->
+
+
     </section><!-- End About Section -->
 
 
@@ -321,7 +479,7 @@ defer"></script>
 
 
     <!-- Stats Section - Home Page -->
-    <section id="stats" class="stats statsxx">
+    <section id="stats" class="stats statsxx d-sm-none">
 
       <!-- <img src="" alt="" data-aos="fade-in"> -->
 
@@ -363,13 +521,7 @@ defer"></script>
             </div>
           </div><!-- End Stats Item -->
 
-          <!-- <div class="col-lg-3 col-md-6">
-<div class="stats-item text-center w-100 h-100">
-<span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1"
-class="purecounter"></span>
-<p>Workers</p>
-</div>
-</div>End Stats Item -->
+
 
         </div>
 
@@ -392,8 +544,8 @@ class="purecounter"></span>
 
       <!--  Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p class="zara">"Exquisite QA Testing: Crafting Software Excellence for Unparalleled User Experiences."</p>
+        <h2 style="font-size: 45px;">Services</h2>
+        <h4 class="zara">"Exquisite QA Testing: Crafting Software Excellence for Unparalleled User Experiences."</h4>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -404,7 +556,7 @@ class="purecounter"></span>
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-bug"></i></div>
               <div>
-                <h4 class="title"><a href="services-details.html" class="stretched-link">Functional Testing</a></h4>
+                <h4 class="title"><a href="index.html#contact" class="stretched-link">Functional Testing</a></h4>
                 <p class="description zara">I meticulously scrutinize every function to ensure software brilliance and
                   unwavering reliability through our comprehensive testing approach.</p>
               </div>
@@ -416,7 +568,7 @@ class="purecounter"></span>
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-filetype-java"></i></div>
               <div>
-                <h4 class="title"><a href="services-details.html" class="stretched-link">Automation & Regression
+                <h4 class="title"><a href="index.html#contact" class="stretched-link">Automation & Regression
                     Testing</a></h4>
                 <p class="description zara">Unleash unparalleled efficiency through my automated regression testing. My
                   process guarantees software excellence with every iteration, ushering your applications into a realm
@@ -440,7 +592,7 @@ class="purecounter"></span>
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-code-slash"></i></div>
               <div>
-                <h4 class="title"><a href="services-details.html" class="stretched-link">API Testing</a></h4>
+                <h4 class="title"><a href="index.html#contact" class="stretched-link">API Testing</a></h4>
                 <p class="description zara">Experience the seamless flow of code interactions, meticulously woven
                   together through my precision API testing, enhancing your software's connectivity and functionality.
                 </p>
@@ -455,7 +607,7 @@ class="purecounter"></span>
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-speedometer2"></i></div>
               <div>
-                <h4 class="title"><a href="services-details.html" class="stretched-link">Performance & Load Testing</a>
+                <h4 class="title"><a href="index.html#contact" class="stretched-link">Performance & Load Testing</a>
                 </h4>
                 <p class="description zara">Ignite your software's potential. I push boundaries, stress limits, and
                   fine-tune every element to ensure your application's peak performance under any workload, delivering
@@ -468,7 +620,7 @@ class="purecounter"></span>
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-laptop"></i></div>
               <div>
-                <h4 class="title"><a href="services-details.html" class="stretched-link">Graphic User Interface
+                <h4 class="title"><a href="index.html#contact" class="stretched-link">Graphic User Interface
                     Testing</a></h4>
                 <p class="description zara"> Immerse yourself in intuitive user experiences, crafted through my
                   meticulous graphical interface testing, ensuring every interaction is a masterpiece of design and
@@ -481,7 +633,7 @@ class="purecounter"></span>
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-gear-wide-connected"></i></div>
               <div>
-                <h4 class="title"><a href="services-details.html" class="stretched-link">Integration Testing</a></h4>
+                <h4 class="title"><a href="index.html#contact" class="stretched-link">Integration Testing</a></h4>
                 <p class="description zara">Watch as software components seamlessly converge, creating a harmonious and
                   interconnected digital ecosystem, carefully nurtured through my expert integration testing approach.
                 </p>
@@ -503,77 +655,89 @@ class="purecounter"></span>
 
 
 
-   
 
-      <div class="corsel" style="background-color: black;">
-       
-        <div
-          class="swiffy-slider slider-nav-animation slider-nav-animation-scaleup slider-indicators-highlight  slider-nav-autoplay slider-nav-autopause slider-item-show2 slider-indicators-sm slider-nav-caretfill slider-nav-mousedrag" data-slider-nav-autoplay-interval="3000" style="transition: opacity 0.1s ease-in-out;" >
-          <div>
-            <h1 style="color: #e80368;">Precision in Process</h2><h2 style="color: white;"> "The Roadmap to My Freelancer Testing Process"</h2>
+
+    <div class="corsel d-xl-none d-md-none d-sm-block" style="background-color: black;">
+
+      <div
+        class="swiffy-slider slider-nav-animation slider-nav-animation-scaleup slider-indicators-highlight  slider-nav-autoplay slider-nav-autopause slider-item-show2 slider-nav-visible slider-indicators-sm slider-nav-caretfill slider-nav-mousedrag"
+        data-slider-nav-autoplay-interval="4500" style="transition: opacity 0.1s ease-in-out;">
+        <div>
+          <h1 style="color: #e80368;">Precision in Process</h2>
+            <h2 style="color: white;"> "The Roadmap to My Freelancer Testing Process"</h2>
             <h3 style="color: #18d26e;">It's as simple as A to Z.</h3>
-          </div> 
-          <ul class="slider-container ">
-            <div class="cone" style="   border-right: 2px solid white;">
+        </div>
+        <ul class="slider-container ">
+          <div class="cone" style="   border-right: 2px solid white;">
 
             <li>
 
-              <lottie-player class="lpone" src="assets/jsonss/reqqq.json" background="grey" speed="1.5" style="width: auto; height: 600px; margin-top: -50px; "
-                loop autoplay></lottie-player>
-                <h2 style="color: aliceblue; margin-top:  0px; margin-right: 10px; margin-left: 20px; ">First I gather your requirements, understand sprint requirements and goals</h2>
+              <lottie-player class="lpone" src="assets/jsonss/reqqq.json" background="grey" speed="1.5"
+                style="width: auto; height: 600px; margin-top: -50px; " loop autoplay></lottie-player>
+              <h2 style="color: aliceblue; margin-top:  0px; margin-right: 10px; margin-left: 20px; "><i class=""
+                  style="height: 10px; width: 10px; background-color: black; fill: black;"></i> I gather your
+                requirements, understand sprint requirements and goals</h2>
 
-            </li> 
+            </li>
 
           </div>
 
 
-          <div  class="ctwo" style="background-color: grey; border-left: 2px white; border-right: 2px white;">
+          <div class="ctwo" style="background-color: grey; border-left: 2px white; border-right: 2px white;">
             <li>
-                <lottie-player id="mtls" src="assets/jsonss/rdMap.json" background="grey" speed="1.5" style="width: 50%; height: 40%; margin-left: 20vw; margin-top: 40%; "
-                loop autoplay></lottie-player>
-                <h2>Then, I begin by planning the testing strategy and designing test cases while setting up the environments.</h2>
-                <!-- <lottie-player src="assets/jsonss/automate.json" background="grey" speed="1.5" style="width: 330px; height: 330px; margin-left: 20vw; margin-top:20vh;"
+              <lottie-player id="mtls" src="assets/jsonss/rdMap.json" background="grey" speed="1.5"
+                style="width: 70%; height: 70%; margin-left: 10vw; margin-top: -10%; " loop autoplay></lottie-player>
+              <h2 style=" padding-left: 10px; padding-right: 10px; color: aliceblue"><i class=""
+                  style="height: 10px; width: 10px; background-color: black; fill: black;"></i>
+                Then I begin by planning the testing strategy and designing test cases while setting up the
+                environments.</h2>
+              <!-- <lottie-player src="assets/jsonss/automate.json" background="grey" speed="1.5" style="width: 330px; height: 330px; margin-left: 20vw; margin-top:20vh;"
                 loop autoplay></lottie-player> -->
             </li>
           </div>
 
 
-          <div class="cthree"  style="border-left: 2px white; border-left: 2px white; border-right: 2px white;">
+          <div class="cthree" style="border-left: 2px white; border-left: 2px white; border-right: 2px white;">
             <li>
-                <lottie-player src="assets/jsonss/relogio_Lp.json" background="white" speed="1.5" style=" height: 60vh; margin-top: 0vh;"
-                loop autoplay></lottie-player>
-                <h2>Now it's time to execute tests, report defects, and collaborate with developers.</h2>
+              <lottie-player src="assets/jsonss/relogio_Lp.json" background="white" speed="1.5"
+                style=" height: 60vh; margin-top: -10vh;" loop autoplay></lottie-player>
+              <h2 style=" padding-left: 10px; padding-right: 10px; color: aliceblue"><i class=""
+                  style="height: 10px; width: 10px; background-color: black; fill: black;"></i>
+                Now it's time to execute tests, report defects, and collaborate with developers.</h2>
 
             </li>
           </div>
           <div class="cfour">
             <li>
-              <h2>Finalizing, I review tests, consolidate insights, and enhance quality for your project's optimal performance.</h2>
-              <lottie-player src="assets/jsonss/testReport.json" background="white" speed="1.5" style="margin-top:0vh; width: auto; height: 60vh;"
-                loop autoplay></lottie-player>
+              <h2 style="padding-left: 10px; padding-right: 10px; color: aliceblue; margin-top: -160px;"> <i class=""
+                  style="height: 10px; width: 10px; background-color: black; fill: black;"></i>
+                Finally, I review tests, consolidate insights, and enhance quality for your project's optimal
+                performance.</h2>
+              <lottie-player src="assets/jsonss/testReport.json" background="white" speed="1.5"
+                style="margin-top:10vh; width: auto; height: 60vh;" loop autoplay></lottie-player>
             </li>
           </div>
-          </ul>
-    
-         
-    
+        </ul>
+
+
+
         <button type="button" class="slider-nav"></button>
         <button type="button" class="slider-nav slider-nav-next"></button>
-    
+
         <div class="slider-indicators  d-md-none d-sm-block">
           <button class="active d-md-none d-sm-block"></button>
           <button></button>
           <button></button>
           <button></button>
 
-          
+
         </div>
       </div>
 
-     
 
 
 
+    </div>
 
 
 
@@ -584,44 +748,74 @@ class="purecounter"></span>
     <!--END OUR PROCESS - Home Page -->
 
     <!-- Features Section - Home Page -->
-    <section id="features" class="features">
+    <section id="features" class="features d-none d-md-block">
 
       <!--  Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Features</h2>
-        <p>With Power Packed Arsenal, Unveil the Remarkable FEATURES of Testing Services.</p>
+        <h2 style="z-index: 1;">Precision in Process</h2>
+        <h4 style="position: relative; top: 20px; left: 20px; z-index: 1; color: white;">"The Roadmap to my Freelancer
+          Testing Process"</h4>
       </div><!-- End Section Title -->
-
+      <h3 style="position: relative; top: -20px; padding-left: 39vw; z-index: 1; color: #18d26e;">It's as simple as A to
+        Z.</h3>
       <div class="container">
 
         <div class="row gy-4 align-items-center features-item">
           <div class="col-lg-5 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-            <h3>Corporis temporibus maiores provident</h3>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-              voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-            </p>
-            <a href="#" class="btn btn-get-started">Get Started</a>
+            <h2 class="bi bi-1-circle-fill" style="color: #e80368;"> Step: </h2>
+
+            <h2 style="color: aliceblue; margin-top:  0px; margin-right: 10px; margin-left: 20px; "><i
+                style="height: 10px; width: 10px; background-color: black; fill: black;"></i>First I gather your
+              requirements, understand sprint requirements and goals.</h2>
+            <br><br>
+            <h2 class="bi bi-2-circle-fill" style="color: #e80368;"> Step: </h2>
+
+            <h2 style=" padding-left: 10px; padding-right: 10px; color: aliceblue"><i
+                style="height: 10px; width: 10px; background-color: black; fill: black;"></i>
+              Then I begin by planning the testing strategy and designing test cases while setting up the
+              environments.</h2>
+
           </div>
           <div class="col-lg-7 order-1 order-lg-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
-            <div class="image-stack">
-              <img src="assets/img/features-light-1.jpg" alt="" class="stack-front">
-              <img src="assets/img/features-light-2.jpg" alt="" class="stack-back">
+            <div class="image-stac">
+              <lottie-player class="lpone" src="assets/jsonss/reqqq.json" background="black" speed="1.5"
+                style="width: 800px; height: 700px;margin-top: -120px; border-radius: 8px; border-color: 5px aliceblue; z-index: -2;"
+                loop autoplay></lottie-player>
+              <!-- <img src="assets/img/features-light-2.jpg" alt="" class="stack-back"> -->
             </div>
+          </div>
+          <div class="col-lg-7 order-1 order-lg-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+
           </div>
         </div><!-- Features Item -->
 
         <div class="row gy-4 align-items-stretch justify-content-between features-item ">
           <div class="col-lg-6 d-flex align-items-center features-img-bg" data-aos="zoom-out">
-            <img src="assets/img/features-light-3.jpg" class="img-fluid" alt="">
+            <lottie-player src="assets/jsonss/finalFeat.json" background="black" speed="1.5"
+              style=" height: 60vh; margin-top: -10vh;" loop autoplay></lottie-player>
           </div>
           <div class="col-lg-5 d-flex justify-content-center flex-column" data-aos="fade-up">
-            <h3>Sunt consequatur ad ut est nulla</h3>
+            <h2 class="bi bi-3-circle-fill" style="color: #e80368;"> Step: </h2>
+            <h2 style=" color: aliceblue"><i
+                style="height: 10px; width: 10px; background-color: black; fill: black;"></i>
+              Now it's time to execute tests, report defects, and collaborate with developers.</h2>
+            <br><br>
+            <h2 class="bi bi-4-circle-fill" style="color: #e80368; "> Step: </h2>
+
+            <h2 style=" color: aliceblue; "> <i
+                style="height: 10px; width: 10px; background-color: black; fill: black;"></i>
+              Finally, I review tests, consolidate insights, and enhance quality for your project's optimal
+              performance.</h2>
+
+            <!-- <h3>Sunt consequatur ad ut est nulla</h3>
             <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut
               quia voluptatem hic voluptas dolor doloremque.</p>
+
+             
             <ul>
-              <li><i class="bi bi-check"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+              
+              <li><i class="bi bi-check"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+              </li>
               <li><i class="bi bi-check"></i><span> Duis aute irure dolor in reprehenderit in voluptate velit.</span>
               </li>
               <li><i class="bi bi-check"></i> <span>Facilis ut et voluptatem aperiam. Autem soluta ad fugiat</span>.
@@ -629,11 +823,11 @@ class="purecounter"></span>
             </ul>
             <a href="#" class="btn btn-get-started align-self-start">Get Started</a>
           </div>
-        </div><!-- Features Item -->
+        </div> Features Item -->
 
-      </div>
+          </div>
 
-    </section><!-- End Features Section -->
+    </section> <!--End Features Section -->
 
 
 
@@ -643,7 +837,7 @@ class="purecounter"></span>
       <!--  Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Pricing</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h3 style="color: white;">"Investing in Excellence: Tailored Solutions for Your Budget"</h3>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="zoom-in" data-aos-delay="100">
@@ -651,57 +845,83 @@ class="purecounter"></span>
         <div class="row g-4">
 
           <div class="col-lg-4">
-            <div class="pricing-item">
-              <h3>Free Plan</h3>
+            <div class="pricing-item" style="background-color: black; border: 3px solid #18d26e">
+              <h3 style="color: #E6E6FA;"> Hourly Plan</h3>
               <div class="icon">
-                <i class="bi bi-box"></i>
+                <i class="bi bi-hourglass-split"></i>
               </div>
-              <h4><sup>$</sup>0<span> / month</span></h4>
+              <h4><sup>$</sup>13<span style="color: #18d26e;"> / hour</span></h4>
               <ul>
-                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                <li><i class="bi bi-check"></i> <span style="color: white; font-size: large ;">Detailed breakdown of
+                    tasks.</span></li>
+
+                <li><i class="bi bi-check"></i> <span style="color: white; font-size: large ;">Regular updates on
+                    progress.</span></li>
+
+                <li><i class="bi bi-check"></i> <span style="color: white; font-size: large ;">Flexible for varying
+                    project needs.</span></li>
+                <li><i class="bi bi-check"></i> <span style="color: white; font-size: large ;">Pay based on time
+                    spent.</span></li>
+
+                <li><i class="bi bi-check"></i> <span style="color: white; font-size: large ;">Transparent tracking of
+                    work hours.</span></li>
               </ul>
-              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+              <div class="text-center"><a href="index.html#contact" class="buy-btn">Buy Now</a></div>
             </div>
           </div><!-- End Pricing Item -->
 
           <div class="col-lg-4">
-            <div class="pricing-item featured">
-              <h3>Business Plan</h3>
-              <div class="icon">
+            <div class="pricing-item featured" style="background-color: black;">
+              <h3 style="color: #E6E6FA ; font-size:x-large ;">Custom Project Plan</h3>
+              <div class="icon ">
                 <i class="bi bi-rocket"></i>
               </div>
 
-              <h4><sup>$</sup>29<span> / month</span></h4>
+              <h4 style="color: #E6E6FA; font-size: larger ;">"Tailored Pricing for Your Project"</h4>
               <ul>
-                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                <li><i class="bi bi-check"></i> <span style="color: white; font-size: large ;">Fixed cost for entire
+                    project.</span></li>
+
+                <li><i class="bi bi-check"></i> <span style="color: white; font-size: large ;">Clear scope and
+                    deliverables.</span></li>
+
+                <li><i class="bi bi-check"></i> <span style="color: white; font-size: large ;">Fixed timeline for
+                    completion.</span></li>
+                <li><i class="bi bi-check"></i> <span style="color: white; font-size: large ;">Payment milestones for
+                    progress.</span></li>
+
+                <li><i class="bi bi-check"></i> <span style="color: white; font-size: large ;">Lower risk for both
+                    parties, powered by Upwork.</span></li>
               </ul>
-              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+              <div class="text-center"><a href="index.html#contact" class="buy-btn">Buy Now</a></div>
             </div>
           </div><!-- End Pricing Item -->
 
           <div class="col-lg-4">
-            <div class="pricing-item">
-              <h3>Developer Plan</h3>
+            <div class="pricing-item" style="background-color: black; border: 3px solid #18d26e">
+              <h3 style="color: #E6E6FA;">Ongoing Retainer Plan</h3>
               <div class="icon">
-                <i class="bi bi-send"></i>
+                <i class="bi bi-shuffle" style="transform: rotate(-90deg);"></i>
               </div>
-              <h4><sup>$</sup>49<span> / month</span></h4>
+              <h4 style="color: #E6E6FA; font-size: larger ;">"Flexible Plans for Ongoing Success"</h4>
+
               <ul>
-                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                <li><i class="bi bi-check"></i> <span style="color: white; font-size: large ;">Priority access to
+                    services.</span></li>
+
+                <li><i class="bi bi-check"></i> <span style="color: white; font-size: large ;">Fixed weekly/monthly
+                    fee.</span></li>
+
+                <li><i class="bi bi-check"></i> <span style="color: white; font-size: large ;">Regular availability for
+                    tasks.</span></li>
+
+                <li><i class="bi bi-check"></i> <span style="color: white; font-size: large ;">Ongoing partnership and
+                    support.</span></li>
+
+                <li><i class="bi bi-check"></i> <span style="color: white; font-size: large ;">Consistent and long-term
+                    collaboration.</span></li>
               </ul>
-              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+              <div class="text-center"><a href="index.html#contact" class="buy-btn">Buy Now</a></div>
             </div>
           </div><!-- End Pricing Item -->
 
@@ -721,10 +941,7 @@ class="purecounter"></span>
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="content px-xl-5">
               <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Duis aute irure dolor in reprehenderit
-              </p>
+              <h4>"Your Inquiries, Our Expertise: Where Your Curiosities Find Answers and Solutions Shape Up"</h4>
             </div>
           </div>
 
@@ -732,55 +949,55 @@ class="purecounter"></span>
 
             <div class="faq-container">
               <div class="faq-item faq-active">
-                <h3><span class="num">1.</span> <span>Non consectetur a erat nam at lectus urna duis?</span></h3>
+                <h3><span class="num">1.</span> <span>What types of services do you offer?</span></h3>
                 <div class="faq-content">
-                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur
-                    gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                  <p>I offer a wide range of testing services including functional testing, API testing, automation
+                    testing, GUI testing, integration testing, performance testing, and even compact RPA development
+                    projects. I tailor my services to meet your specific testing needs.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3><span class="num">2.</span> <span>Feugiat scelerisque varius morbi enim nunc faucibus a
-                    pellentesque?</span></h3>
+                <h3><span class="num">2.</span> <span>How can automated testing benefit my project?</span></h3>
                 <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet
-                    id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque
-                    elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                  <p>Automated testing helps ensure consistent and reliable test results, accelerates testing cycles,
+                    hunting bug early, and enhances overall software quality. It's a cost-effective solution for
+                    repetitive and time-consuming testing tasks.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3><span class="num">3.</span> <span>Dolor sit amet consectetur adipiscing elit pellentesque?</span>
+                <h3><span class="num">3.</span> <span>Can you handle both manual and automated testing?</span>
                 </h3>
                 <div class="faq-content">
-                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar
-                    elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque
-                    eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis
-                    sed odio morbi quis</p>
+                  <p>Yes, I am proficient in both manual and automated testing. Depending on the nature of your project,
+                    I can recommend a balanced approach that combines the strengths of both testing methods to achieve
+                    optimal results.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3><span class="num">4.</span> <span>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</span>
+                <h3><span class="num">4.</span> <span>How do you ensure the confidentiality of my project's
+                    information?</span>
                 </h3>
                 <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet
-                    id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque
-                    elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                  <p>I prioritize the confidentiality and security of your project's information. I am committed to
+                    signing non-disclosure agreements (NDAs) and implementing secure communication channels to protect
+                    your data.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3><span class="num">5.</span> <span>Tempus quam pellentesque nec nam aliquam sem et tortor
-                    consequat?</span></h3>
+                <h3><span class="num">5.</span> <span>What is your approach to performance testing and
+                    optimization?</span></h3>
                 <div class="faq-content">
-                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in.
-                    Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est.
-                    Purus gravida quis blandit turpis cursus in</p>
+                  <p>I perform comprehensive performance testing to identify bottlenecks, assess system behavior under
+                    load, and ensure optimal performance. I then provide insights and recommendations for optimization
+                    to enhance user experience.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
@@ -798,7 +1015,7 @@ class="purecounter"></span>
 
 
     <!-- Call-to-action Section - Home Page -->
-    <section id="call-to-action" class="call-to-action">
+    <!-- <section id="call-to-action" class="call-to-action">
 
       <img src="assets/img/cta-bg.jpg" alt="">
 
@@ -807,7 +1024,8 @@ class="purecounter"></span>
           <div class="col-xl-10">
             <div class="text-center">
               <h3>Call To Action</h3>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur.
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
                 laborum.</p>
               <a class="cta-btn" href="#">Call To Action</a>
@@ -816,7 +1034,7 @@ class="purecounter"></span>
         </div>
       </div>
 
-    </section><!-- End Call-to-action Section -->
+    </section>End Call-to-action Section -->
 
     <!-- Testimonials Section - Home Page -->
     <section id="testimonials" class="testimonials">
@@ -828,10 +1046,9 @@ class="purecounter"></span>
           <div class="col-lg-5 info" data-aos="fade-up" data-aos-delay="100">
             <h3>Testimonials</h3>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-              voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-            </p>
+              My clients' satisfaction and success are at the core of I do. Through my dedicated QA and Automation services, I've had the privilege of partnering with businesses to enhance their bug-free
+              software quality, streamline processes, and exceed user expectations. Here's a glimpse of what my clients
+              have to say about their experience with me.</p>
           </div>
 
           <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
@@ -860,7 +1077,7 @@ class="purecounter"></span>
                       <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img flex-shrink-0"
                         alt="">
                       <div>
-                        <h3>Saul Goodman</h3>
+                        <h3>Aditya Vikram</h3>
                         <h4>Ceo & Founder</h4>
                         <div class="stars">
                           <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
@@ -870,9 +1087,11 @@ class="purecounter"></span>
                     </div>
                     <p>
                       <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
-                        Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at
-                        semper.</span>
+                      <span>Anuj is a game-changer! His automation scripts have streamlined our operations, boosting
+                        productivity and accuracy. Thanks to his expertise, we've achieved more in less time. Anuj is an
+                        invaluable asset to any team.
+
+                      </span>
                       <i class="bi bi-quote quote-icon-right"></i>
                     </p>
                   </div>
@@ -885,7 +1104,7 @@ class="purecounter"></span>
                         alt="">
                       <div>
                         <h3>Sara Wilsson</h3>
-                        <h4>Designer</h4>
+                        <h4>Project Manager</h4>
                         <div class="stars">
                           <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                             class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -894,13 +1113,14 @@ class="purecounter"></span>
                     </div>
                     <p>
                       <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum
-                        eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim
-                        culpa.</span>
+                      <span>As a Project Manager, I had the pleasure of collaborating with Anuj for a critical testing
+                        task. His rapid response to our last-minute request and swift execution showcased his
+                        professionalism and dedication.If you're seeking a reliable testing partner, Anuj is the one to
+                        trust.</span>
                       <i class="bi bi-quote quote-icon-right"></i>
                     </p>
                   </div>
-                </div>End testimonial item
+                </div>
 
                 <div class="swiper-slide">
                   <div class="testimonial-item">
@@ -918,8 +1138,10 @@ class="purecounter"></span>
                     </div>
                     <p>
                       <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis
-                        minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                      <span>Choosing Anuj as a tester for my small e-commerce website was a game-changer! As a store
+                        owner in Torronto, I was skeptical about the testing process, but Anuj made it seamless and
+                        stress-free.If you're a business owner seeking a top-notch tester, Anuj is the perfect choice.
+                      </span>
                       <i class="bi bi-quote quote-icon-right"></i>
                     </p>
                   </div>
@@ -941,9 +1163,10 @@ class="purecounter"></span>
                     </div>
                     <p>
                       <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim
-                        velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum
-                        veniam.</span>
+                      <span>Working with Anuj on my freelance development project was a great decision. His testing
+                        expertise brought a new level of confidence to my work. Anuj's attention to detail and thorough
+                        testing approach ensured a polished final product. I highly recommend his testing services to
+                        fellow freelancers and developers.</span>
                       <i class="bi bi-quote quote-icon-right"></i>
                     </p>
                   </div>
@@ -955,7 +1178,7 @@ class="purecounter"></span>
                       <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img flex-shrink-0"
                         alt="">
                       <div>
-                        <h3>John Larson</h3>
+                        <h3>Harshit Bhalla</h3>
                         <h4>Entrepreneur</h4>
                         <div class="stars">
                           <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
@@ -965,9 +1188,10 @@ class="purecounter"></span>
                     </div>
                     <p>
                       <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam
-                        enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi
-                        cillum quid.</span>
+                      <span>Anuj's testing services have been a valuable asset to my entrepreneurial journey. His
+                        meticulous testing methods have helped me identify and resolve potential issues before they
+                        impact my business. With Anuj on my team, I can confidently launch new ventures, knowing that my
+                        products are thoroughly tested and reliable.</span>
                       <i class="bi bi-quote quote-icon-right"></i>
                     </p>
                   </div>
@@ -992,49 +1216,52 @@ class="purecounter"></span>
       <!--  Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>"Let's Connect and Secure Assured Testing Excellence Together!"</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
 
-          <div class="col-lg-6">
+          <div class="">
 
-            <div class="row gy-4">
-              <div class="col-md-6">
+            <div class="row gy-4 text-center">
+              <div class="col-md-3">
                 <div class="info-item" data-aos="fade" data-aos-delay="200">
                   <i class="bi bi-geo-alt"></i>
                   <h3>Address</h3>
-                  <p>A108 Adam Street</p>
-                  <p>New York, NY 535022</p>
+                  <p>315, Ocus Quantum</p>
+                  <p>Sector 51, Gurugram</p>
                 </div>
               </div><!-- End Info Item -->
 
-              <div class="col-md-6">
-                <div class="info-item" data-aos="fade" data-aos-delay="300">
+              <div class="col-md-3">
+                <div class="info-item fullx" data-aos="fade" data-aos-delay="300">
                   <i class="bi bi-telephone"></i>
-                  <h3>Call Us</h3>
-                  <p>+1 5589 55488 55</p>
-                  <p>+1 6678 254445 41</p>
+                  <h3>Call Me</h3>
+                  <p>+91 8076122484</p>
+                  <p>+91 8076901663</p>
+
                 </div>
               </div><!-- End Info Item -->
 
-              <div class="col-md-6">
+              <div class="col-md-3">
                 <div class="info-item" data-aos="fade" data-aos-delay="400">
                   <i class="bi bi-envelope"></i>
-                  <h3>Email Us</h3>
-                  <p>info@example.com</p>
-                  <p>contact@example.com</p>
+                  <h3>Email Me</h3>
+                  <p>anuj@heliverse.com</p>
+                  <p>rawatanuj07@gmail.com</p>
+
                 </div>
               </div><!-- End Info Item -->
 
-              <div class="col-md-6">
+              <div class="col-md-3">
                 <div class="info-item" data-aos="fade" data-aos-delay="500">
                   <i class="bi bi-clock"></i>
                   <h3>Open Hours</h3>
-                  <p>Monday - Friday</p>
-                  <p>9:00AM - 05:00PM</p>
+                  <p>Monday - Sunday</p>
+                  <p>9:00PM - 06:30AM IST</p>
+
                 </div>
               </div><!-- End Info Item -->
 
@@ -1042,7 +1269,7 @@ class="purecounter"></span>
 
           </div>
 
-          <div class="col-lg-6">
+          <!-- <div class="col-lg-6">
             <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
               data-aos-delay="200">
               <div class="row gy-4">
@@ -1073,7 +1300,7 @@ class="purecounter"></span>
 
               </div>
             </form>
-          </div><!-- End Contact Form -->
+          </div>End Contact Form -->
 
         </div>
 
@@ -1087,63 +1314,113 @@ class="purecounter"></span>
   <footer id="footer" class="footer">
 
     <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-5 col-md-12 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span>Append</span>
+      <div class="row" style="padding-left: 0px;">
+        <div id="mcentr" class=" col-lg-4 col-md-4 logo d-flex align-items-center justify-content-center my-3">
+          <a href="index.html" class="logo d-flex align-items-center justify-content-center my-3">
+            <span id="mcenter" class="glass">ANUJ RAWAT</span>
           </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta
-            donna mare fermentum iaculis eu non diam phasellus.</p>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="row" style="padding-bottom: 10px;">
+
+        <div class="col-lg-2 col-md-4 " style="padding-right: 0px;">
+          <div class="member-img" style=" margin-right: 10px;">
+            <img src="assets/fphk.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+        <div id="marleft" class="col-lg-10 col-md-8 logo d-flex align-items-center">
+          <div class="read-more-content">
+            <p id="marleft" style="font-family: var(--font-primary) ; color: white; margin-left: 10px;">Five years
+              ago, I embarked on a unique journey that saw me alternating between roles as a waiter, chef, housekeeper, traveler, trek-guide, Trekker et cetra; and leading
+              adventurers through breathtaking trails and sharing stories of nature's wonders.
+              In between, I also curated a cozy café nestled in the Himalayas
+              for a year, creating an unforgettable cosmic experience.<br> Now, I'm a seasoned self-taught software developer
+              and a tester, committed to elevating the quality of software I touch.
+              <br>
+              Beyond these pursuits, my focus is to attain mastery in embedded systems, AOSP, and custom ROM
+              development—a
+              mission that drives me. Alongside, very recently I've decided to embark on a distinctive endeavor: experimenting with crafting
+              tailored programming tutorials designed for individuals with ADHD/OCD; an attempt on my behalf to assist
+              the
+              Beginners in the realm of programming. Through time, I uncovered the profound healing power that lies in
+              treks, programming, cinematic journeys, and the world of electronic instrumental music with 432hz tuning
+              principle.<br>
+              Thanks!
+            </p>
+
+          </div>
+          
+        </div>
+        <button class="read-more-button">Read More</button>
+      </div>
+
+      <div class="row gy-4" style="padding-top: 10px;">
+        <div class="col-lg-3 col-md-12 footer-about">
+
+
+
+          <div class="social-links d-flex mt-4" style="margin-top: 0px;">
+            <a href="index.html#contact"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://github.com/rawatanuj07"><i class="bi bi-github"></i></a>
+            <a href="https://instagram.com/rawatanuj07?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i
+                class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/anuj-rawat-a0889320a?trk=contact-info"><i
+                class="bi bi-linkedin"></i></a>
+
+            <!-- <a href="">
+              <svg class="custom-icon" width="16" height="16" viewBox="0 0 16 16" style="fill:#e80368 "> -->
+            <!-- Include your SVG code here -->
+            <!-- <?xml version="1.0" ?><svg id="Layer_1" style="enable-background:new 0 0 56.7 56.7;" version="1.1" viewBox="0 0 56.7 56.7" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M38.8,24.6c-2.8,0-3.7,2.7-3.9,4.3v0.1l-0.4,1.5c1.2,1,2.7,1.7,4.2,1.7c2,0,3.8-1.7,3.9-3.9C42.6,26.3,40.9,24.6,38.8,24.6   z"/><path d="M28.9,3.7C15.2,3.7,4.1,14.8,4.1,28.5c0,13.7,11.1,24.8,24.8,24.8c13.7,0,24.8-11.1,24.8-24.8C53.7,14.8,42.6,3.7,28.9,3.7   z M38.8,36.1c-2,0-3.7-0.6-5.2-1.5l-1.7,8H28l2.4-11c-1-1.4-2-3-2.7-4.5v1.7c0,4.1-3.3,7.4-7.3,7.4c-4,0-7.3-3.3-7.3-7.4v-10h3.8   v10c0,2,1.6,3.6,3.6,3.6c2,0,3.6-1.6,3.6-3.6v-10h3.8c0.8,2.5,2.1,5.5,3.8,8.2c1-3.8,3.8-6.1,7.3-6.1c4.1,0,7.5,3.4,7.5,7.5   C46.3,32.7,42.9,36.1,38.8,36.1z"/></g></svg>
+              </svg>
+            </a> -->
           </div>
         </div>
 
-        <div class="col-lg-2 col-6 footer-links">
+        <div class="col-lg-3 col-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="index.html#about">About Me</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#features">Process</a></li>
+            <li><a href="index.html#pricing">Pricing</a></li>
           </ul>
         </div>
 
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
+        <div class="col-lg-3 col-6 footer-links">
+          <h4>My Services</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="index.html#contact">Manual Testing</a></li>
+            <li><a href="index.html#contact">Automation Testing</a></li>
+            <li><a href="index.html#contact">Website Development</a></li>
+            <li><a href="index.html#contact">Mobile App Development</a></li>
+            <li><a href="index.html#contact">Robotic Process Automation</a></li>
           </ul>
         </div>
+
+
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contact Us</h4>
-          <p>A108 Adam Street</p>
-          <p>New York, NY 535022</p>
-          <p>United States</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span>info@example.com</span></p>
+          <h4>Contact Me</h4>
+          <p>315, Ocus Quantum</p>
+          <p>Sector 51,</p>
+          <p>Gurugram</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+91-8076122484</span></p>
+          <p><strong>Email:</strong> <span>rawatanuj07@gmail.com</span></p>
         </div>
 
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>&copy; <span>Copyright</span> <strong class="px-1">Append</strong> <span>All Rights Reserved</span></p>
+      <p>&copy; <span>2023</span> <strong class="px-1">Decode-Parvathy</strong> <span>All Rights Reserved</span>
+      </p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href="https://github.com/rawatanuj07">rawatanuj07</a>
       </div>
     </div>
 
@@ -1173,6 +1450,8 @@ class="purecounter"></span>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <!-- <script src="assets/vendor/waypoints/noframework.waypoints.js"></script> -->
+
   <!-- <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script> -->
 
 
@@ -1184,6 +1463,24 @@ class="purecounter"></span>
     
     });
   </script> -->
+  <script>
+    const readMoreButtonn = document.querySelector('.read-more-button');
+    const readMoreContent = document.querySelector('.read-more-content');
+  
+    readMoreButtonn.addEventListener('click', () => {
+      readMoreContent.classList.toggle('open');
+      if (readMoreContent.classList.contains('open')) {
+        readMoreButtonn.textContent = 'Read Less';
+      } else {
+        readMoreButtonn.textContent = 'Read More';
+      }
+    });
+  </script>
+
+
+
+
+
 
   <script>
     const readMoreButton = document.querySelector('.read-more');
@@ -1205,10 +1502,44 @@ class="purecounter"></span>
 
 
 
+
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
     integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
- 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+  <script>
+    let skillsContent = document.querySelector('.skills-content');
+    if (skillsContent) {
+      new Waypoint({
+        element: skillsContent,
+        offset: '80%',
+        handler: function (direction) {
+          let progressBars = document.querySelectorAll('.progress-bar');
+          progressBars.forEach((bar) => {
+            bar.style.width = bar.getAttribute('aria-valuenow') + '%';
+          });
+        },
+      });
+    }
+  </script>
+
 </body>
 
 </html>
+
+
+
+
+
+
+<!-- <div id="extra-content" style="display: none;">
+            <p class="zara"> Before the digital realm, I ventured into the mystic world of managing a small, cozy café
+              nestled in a hamlet in the majestic Himalayas for a year. However, my journey doesn't end there. Over the
+              past five years, I've worn the hat of a trekker and tour guide, leading adventurers through breathtaking
+              trails and sharing stories of nature's wonders. I've discovered that treks, music, movies, and coding hold
+              the power to heal me.</p>
+          </div>
+          <a href="" class="read-more "><span>Read More</span><i class="bi bi-arrow-down"></i></a> -->
